@@ -1,0 +1,155 @@
+.main_content_container {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgb(47, 51, 54);
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar_img {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+}
+
+.post_input {
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.post_input textarea {
+  background-color: var(--body-background-color);
+  border: none;
+  color: var(--font-primary-color);
+  font-size: 1.3rem;
+  font-weight: 400;
+  display: flex;
+  padding-top: 1rem;
+  width: 100%;
+}
+
+.post_input textarea:focus {
+  outline: none;
+}
+
+.post_button {
+  width: 5rem;
+  height: 2rem;
+  align-self: flex-end;
+  border-radius: 1rem;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: var(--btn-background-color);
+  color: var(--font-primary-color);
+  cursor: pointer;
+}
+
+.post_content {
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.page_header {
+  font-size: larger;
+  font-weight: 700;
+  color: var(--font-primary-color);
+}
+
+.comment_content {
+  display: flex;
+  column-gap: 1rem;
+}
+
+.comment_container_icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.comment_text {
+  display: flex;
+  flex-direction: column;
+  color: var(--font-primary-color);
+}
+
+.comment_container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  border-top: solid 1px var(--border-color);
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.comment_container:hover {
+  background-color: #090909;
+}
+
+.avatar_name {
+  display: flex;
+  column-gap: 0.3rem;
+}
+
+.icon_container {
+  display: flex;
+  column-gap: 0.8rem;
+  align-items: center;
+  cursor: pointer;
+  color: var(--font-secondary-color);
+}
+
+.count {
+  font-size: small;
+}
+
+.icons {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.follow_suggestion_username,
+.dots {
+  color: var(--font-secondary-color);
+}
+
+.buttons {
+  display: flex;
+  margin-left: 4rem;
+  justify-content: space-between;
+}
+
+.option_icons {
+  color: rgb(29, 155, 240);
+  display: flex;
+  column-gap: 1rem;
+  font-size: 1.3rem;
+}
+
+.post_option {
+  display: flex;
+  justify-content: space-between;
+}
+
+.follow_suggestion_name {
+  font-weight: 700;
+}
+
+.follow_suggestion_name:hover {
+  text-decoration: underline 1px;
+}
+
+.blue_icon:hover {
+  color: rgb(29, 155, 240);
+  border-radius: 50%;
+}
+
+.pink_icon:hover {
+  color: rgb(249, 24, 128);
+}
