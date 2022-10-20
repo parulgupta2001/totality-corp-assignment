@@ -2,11 +2,15 @@
   --body-background-color: black;
   --font-primary-color: white;
   --font-secondary-color: rgb(113, 118, 123);
-  --border-color: grey;
+  --border-color: rgb(47, 51, 54);
   --btn-background-color: rgb(29, 155, 240);
   --who-to-follow-background-color: rgb(22, 24, 28);
   --like-color: red;
   --bookmark-color: blue;
+}
+
+.App {
+  display: flex;
 }
 
 .main {
