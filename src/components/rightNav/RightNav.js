@@ -14,15 +14,8 @@ export function RightNav({ posts }) {
   return (
     <aside className="right_nav_container">
       <div style={{ display: "flex" }}>
-        <span>
-          <FiSearch
-            style={{
-              color: "var(--font-secondary-color)",
-              marginTop: "1.2rem",
-              paddingLeft: "1rem",
-              position: "absolute",
-            }}
-          />
+        <span className="search_icon">
+          <FiSearch />
         </span>
         <input placeholder="Search Twitter" className="right_nav_input" />
       </div>
@@ -35,7 +28,7 @@ export function RightNav({ posts }) {
               <div className="about_news">gdahfjh</div>
             </div>
           ))}
-          {/* <div className="show_more">Show more</div> */}
+          <div className="show_more">Show more</div>
         </div>
 
         <div className="who_to_follow">
@@ -74,7 +67,7 @@ export function RightNav({ posts }) {
           <div>© 2022 Twitter, Inc.</div>
         </footer>
       </div>
-      <div style={{ height: "1000rem" }}></div>
+      <div style={{ height: "900rem" }}></div>
     </aside>
   );
 }
