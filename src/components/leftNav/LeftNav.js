@@ -6,6 +6,7 @@ import { BsBookmark, BsThreeDots } from "react-icons/bs";
 import { HiOutlineBell } from "react-icons/hi";
 import { IoLogoTwitter } from "react-icons/io";
 import { CgMoreO } from "react-icons/cg";
+import { GiFeather } from "react-icons/gi";
 
 export function LeftNav() {
   const arr = [
@@ -32,7 +33,7 @@ export function LeftNav() {
   ];
 
   return (
-    <div className="left_nav_container">
+    <aside className="left_nav_container">
       <div className="functional_container">
         <div className="logo website_name">
           <IoLogoTwitter />
@@ -46,6 +47,9 @@ export function LeftNav() {
         ))}
 
         <button className="post_btn">Tweet</button>
+        <button className="small_post_btn">
+          <GiFeather />
+        </button>
 
         <div className="profile">
           <img
@@ -61,6 +65,6 @@ export function LeftNav() {
           </div>
         </div>
       </div>
-    </div>
+    </aside>
   );
 }

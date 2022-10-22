@@ -8,14 +8,13 @@
   align-self: flex-start;
   min-height: 100vh;
   align-items: center;
-  border-right: solid 0.2px var(--border-color);
   row-gap: 3rem;
   padding-right: 2rem;
 }
 
 .logo {
   font-size: 2rem;
-  padding-top: 1rem;
+  padding: 1rem 0 0.8rem 0.8rem;
   font-weight: bold;
   color: var(--font-primary-color);
 }
@@ -34,6 +33,7 @@
   color: var(--font-primary-color);
   font-size: 16px;
   cursor: pointer;
+  margin-top: 0.8rem 0 0.8rem 0;
 }
 
 .functional_icon_container {
@@ -43,10 +43,12 @@
   cursor: pointer;
   width: fit-content;
   color: var(--font-primary-color);
+  padding: 0.8rem;
 }
 
-.three_dots {
-  color: var(--font-primary-color);
+.functional_icon_container:hover {
+  background-color: var(--hover-color);
+  border-radius: 2rem;
 }
 
 .functionality {
@@ -59,7 +61,6 @@
   display: flex;
   align-self: flex-end;
   flex-direction: column;
-  row-gap: 1.7rem;
 }
 
 .profile img {
@@ -72,7 +73,7 @@
   display: flex;
   align-items: center;
   column-gap: 0.7rem;
-  padding: 2rem 4rem 0 0;
+  padding: 4rem 0 0 0.5rem;
 }
 
 .profile_name {
@@ -87,25 +88,33 @@
 .three_dots {
   width: 2rem;
   padding-left: 0.5rem;
+  color: var(--font-primary-color);
 }
 
-@media screen and (max-width: 1100px) {
+.small_post_btn {
+  display: none;
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  background-color: var(--btn-background-color);
+  color: var(--font-primary-color);
+}
+
+@media screen and (max-width: 1150px) {
   .left_nav_container {
-    padding-left: 2rem;
+    width: 12%;
+    padding-left: 4rem;
   }
-}
-
-@media screen and (max-width: 700px) {
-  .about_profile,
+  .post_btn,
   .functionality,
-  .post_btn {
+  .about_profile,
+  .three_dots {
     display: none;
   }
-  .left_nav_container {
-    width: 10%;
+  .small_post_btn {
+    display: flex;
     align-items: center;
-  }
-  .profile {
-    padding-right: 13rem;
+    justify-content: center;
   }
 }

@@ -13,12 +13,8 @@ import { GoFileMedia } from "react-icons/go";
 import { BsThreeDots } from "react-icons/bs";
 
 export function MainContent({ posts }) {
-  const scrollHandler = () => {
-    console.log(1);
-  };
-
   return (
-    <div className="main_content_container main" onScroll={scrollHandler}>
+    <div className="main_content_container main">
       <div className="post_content">
         <div className="page_header">Home</div>
 
@@ -35,9 +31,9 @@ export function MainContent({ posts }) {
           <span className="option_icons">
             <GoFileMedia />
             <AiOutlineFileGif />
-            <BiPoll />
+            <BiPoll className="poll_icon" />
             <HiOutlineEmojiHappy />
-            <TbCalendarTime />
+            <TbCalendarTime className="time_icon" />
             <HiOutlineLocationMarker />
           </span>
           <button className="post_button">Tweet</button>
@@ -72,22 +68,22 @@ export function MainContent({ posts }) {
 
               <div className="comment_container_icon">
                 <div className="icon_container blue_icon">
-                  <BiMessageRounded title="comment" className="icons " />
+                  <BiMessageRounded title="Reply" className="icons " />
                   <span className="count">458</span>
                 </div>
 
                 <div className="icon_container green_icon">
-                  <FaRetweet className="icons" />
+                  <FaRetweet title="Retweet" className="icons" />
                   <span className="count">866</span>
                 </div>
 
                 <div className="icon_container pink_icon">
-                  <HiOutlineHeart title="comment" className="icons" />
+                  <HiOutlineHeart title="Like" className="icons" />
                   <span className="count"> 2377</span>
                 </div>
 
                 <div className="icon_container">
-                  <FiShare title="share" className="icons blue_icon" />
+                  <FiShare title="Share" className="icons blue_icon" />
                 </div>
               </div>
             </div>
