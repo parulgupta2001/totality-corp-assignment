@@ -11,19 +11,14 @@ import { TbCalendarTime } from "react-icons/tb";
 import { FaRetweet } from "react-icons/fa";
 import { GoFileMedia } from "react-icons/go";
 import { BsThreeDots } from "react-icons/bs";
-import { useState, useEffect } from "react";
 
-export function MainContent() {
-  const [posts, setPosts] = useState([]);
-
-  useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/posts")
-      .then((response) => response.json())
-      .then((json) => setPosts(json));
-  }, [posts]);
+export function MainContent({ posts }) {
+  const scrollHandler = () => {
+    console.log(1);
+  };
 
   return (
-    <div className="main_content_container main">
+    <div className="main_content_container main" onScroll={scrollHandler}>
       <div className="post_content">
         <div className="page_header">Home</div>
 
